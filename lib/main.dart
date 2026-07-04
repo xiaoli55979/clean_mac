@@ -15,8 +15,18 @@ class CleanMacApp extends StatelessWidget {
     return MaterialApp(
       title: 'CleanMac',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorSchemeSeed: seed, brightness: Brightness.light),
-      darkTheme: ThemeData(colorSchemeSeed: seed, brightness: Brightness.dark),
+      theme: ThemeData(
+        colorSchemeSeed: seed,
+        brightness: Brightness.light,
+        useMaterial3: true,
+        visualDensity: VisualDensity.compact,
+      ),
+      darkTheme: ThemeData(
+        colorSchemeSeed: seed,
+        brightness: Brightness.dark,
+        useMaterial3: true,
+        visualDensity: VisualDensity.compact,
+      ),
       home: const HomePage(),
     );
   }
