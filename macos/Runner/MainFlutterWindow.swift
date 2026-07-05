@@ -5,8 +5,9 @@ class MainFlutterWindow: NSWindow {
   override func awakeFromNib() {
     let flutterViewController = FlutterViewController()
     self.contentViewController = flutterViewController
-    self.setContentSize(NSSize(width: 1080, height: 700))
-    self.minSize = NSSize(width: 880, height: 560)
+    self.title = "CleanMac"
+    self.setContentSize(NSSize(width: 1180, height: 760))
+    self.minSize = NSSize(width: 980, height: 640)
     self.center()
 
     RegisterGeneratedPlugins(registry: flutterViewController)
